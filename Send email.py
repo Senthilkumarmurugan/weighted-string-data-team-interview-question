@@ -1,3 +1,7 @@
+import smtplib,ssl
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+
 def sendEmail(receiver_email: str,message: str) -> dict:
     """ Function to send an email to the created Users in Orange Hrm"""
 
